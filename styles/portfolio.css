@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #11b8c4;
-  --secondary-color: #effeff;
+  --branding-color: #19c2ce;
+  --secondary-color: #faf7ff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -19,18 +19,24 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 76px;
+  font-size: 66px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 30;
 }
 
 p {
   font-family: var(--default-font-family);
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 
 .hero p {
@@ -42,8 +48,8 @@ p {
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: normal;
-  font-size: 24px;
-  line-height: 2;
+  font-size: 28px;
+  line-height: 1.5;
 }
 
 .btn-branding {
@@ -53,4 +59,31 @@ p {
   font-size: 18px;
   line-height: 25px;
   padding: 12px 20px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 3px solid var(--branding-color);
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 12px 20px;
+}
+.projection-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 32px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  .projection-description {
+    padding: 0;
+    text-align: center;
+  }
 }

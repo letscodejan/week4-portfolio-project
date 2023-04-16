@@ -123,6 +123,16 @@ i:hover {
   color: #0ceaf1;
 }
 
+.contact-click-link {
+  text-decoration: none;
+  color: #797575;
+}
+
+.contact-click-link:hover {
+  color: #ff6297;
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .navbar-brand {
     font-size: 15px;

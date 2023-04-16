@@ -1,6 +1,7 @@
 :root {
   --branding-color: #19c2ce;
   --secondary-color: #faf7ff;
+  --background-color: #ecfdff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -19,12 +20,6 @@ nav ul {
   font-size: 14px;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 40px;
-}
-
 h1,
 h2,
 h3,
@@ -40,7 +35,11 @@ h1 {
   line-height: 1.5;
 }
 h2 {
-  font-size: 30;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 35px;
 }
 
 p {
@@ -53,7 +52,7 @@ p {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 200px 20px;
+  padding: 180px 20px;
 }
 
 .hero p {
@@ -107,7 +106,7 @@ p {
 
 .btn-branding {
   background: var(--branding-color);
-  border-radius: 8px;
+  border-radius: 16px;
   color: #ffffff;
   font-size: 18px;
   line-height: 25px;
@@ -116,25 +115,59 @@ p {
 
 .btn-branding-outline {
   color: var(--branding-color);
-  border: 3px solid var(--branding-color);
-  border-radius: 8px;
+  border: 1px solid var(--branding-color);
+  border-radius: 16px;
   font-size: 18px;
   line-height: 25px;
   padding: 12px 20px;
 }
+
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+}
+
 .projection-description {
   padding: 120px 60px;
 }
 
-i {
-  font-size: 28px;
-  color: #000000;
-}
 footer {
-  background: #ddf3f5;
+  margin: 60px;
 }
-i:hover {
-  color: #0ceaf1;
+
+footer .contact-box {
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+footer .email-link:hover {
+  color: #061fff;
+}
+
+footer .social-links a {
+  margin: 0 15px;
+  font-size: 18px;
+  color: #000000;
+  background: var(--background-color);
+  padding: 10px 16px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #f10386;
 }
 
 .contact-click-link {
@@ -144,7 +177,7 @@ i:hover {
 
 .contact-click-link:hover {
   color: #ff6297;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {

@@ -181,6 +181,11 @@ footer .social-links a:hover {
   text-decoration: none;
 }
 
+.open-source-link p {
+  font-size: 12px;
+  padding: 10px;
+}
+
 @media (max-width: 900px) {
   .navbar-brand {
     font-size: 15px;
